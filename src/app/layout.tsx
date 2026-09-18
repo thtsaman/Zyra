@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import { Provider } from "./providers";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-serif",
@@ -33,7 +32,7 @@ export default function RootLayout({
       <body
         className={`${cormorant.variable} ${plusJakarta.variable} antialiased`}
       >
-        <Provider>{children}</Provider>
+        {children}
       </body>
     </html>
   );
