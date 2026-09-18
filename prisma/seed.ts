@@ -8,13 +8,11 @@ async function main() {
     data: [
       {
         email: "user1@example.com",
-        password: "password123",
-        role: "USER",
+        name: "User One",
       },
       {
         email: "admin@example.com",
-        password: "password123",
-        role: "ADMIN",
+        name: "Admin User",
       },
     ],
     skipDuplicates: true,
